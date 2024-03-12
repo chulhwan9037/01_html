@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrapper{
+		width: 800px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(5, 100px);
+	}
+	.box{
+		background-color: lightblue;
+		border: 1px solid black;
+		margin: 5px;
+		padding: 15px;
+		color: black;
+	}
+	.box1{
+		grid-column: 1/4;
+		border-left: 0px;
+		border-right: 0px;	
+	}
+	.box2{
+		grid-row: 2/5;
+		border-left: 0px;
+	}
+	.box3{
+		grid-row: 2/5;
+	}
+	.box4{
+		grid-column: 3/4;
+		border-right: 0px;	
+	}
+	.box5{
+		grid-column: 3/3;
+		border-right: 0px;	
+	}
+	.box6{
+		grid-column: 4/3;
+		border-right: 0px;	
+	}
+	.box7{
+		grid-column: 1/4;
+		border-left: 0px;
+		border-right: 0px;	
+	}
+	
+	
+</style>
+</head>
+<body>
+<div id="wrapper">
+		<div class="box box1">header</div> 
+		<div class="box box2">menu</div>
+		<div class="box box3">main</div>
+		<div class="box box4">top</div>
+		<div class="box box5">aside</div>
+		<div class="box box6">bottom</div>
+		<div class="box box7">footer</div>
+	</div>
+</body>
+</html>

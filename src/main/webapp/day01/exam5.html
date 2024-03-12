@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let ceoList = [
+		{name : "Larry page", age : 23 , ceo: true},
+		{name : "Tim Cook", age : 40 , ceo: false},
+		{name : "Elon Musk", age : 55 , ceo: true}
+	];
+	
+	console.log(ceoList.map((a)=>a.name));
+	
+	console.log(ceoList.filter((k)=>k.age >= 40));
+</script>
+</body>
+</html>
